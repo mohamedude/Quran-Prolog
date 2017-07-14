@@ -9,6 +9,8 @@ gracious(allah).
 /* Say, "He is Allah, [who is] One, */
 one(allah).
 
+/* is_one(allah). */
+
 /* Allah, the Eternal Refuge. */
 absolute(allah).
 
