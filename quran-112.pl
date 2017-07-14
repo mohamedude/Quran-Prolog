@@ -4,17 +4,18 @@
 **********************************************************************/
 
 /* In the name of Allah, the Entirely Merciful, the Especially Merciful. */
+is_merciful(allah).
+is_gracious(allah).
 
 /* Say, "He is Allah, [who is] One, */
-one(allah).
-
-/* is_one(allah). */
+is_one(allah).
 
 /* Allah, the Eternal Refuge. */
-absolute(allah).
+is_absolute(allah).
 
 /* He neither begets nor is born, */
-god112(X) :- not(begets(X)), not(born(X)).
+not(is_begets(X)).
+not(is_born(X)).
 
 /* Nor is there to Him any equivalent." */
 not(equivalent(X, Y)):- god(X), god(Y).

@@ -4,26 +4,25 @@
 **********************************************************************/
 
 /* In the name of Allah, the Entirely Merciful, the Especially Merciful. */
-merciful(allah).
-gracious(allah).
+is_merciful(allah).
+is_gracious(allah).
 
 /* [All] praise is [due] to Allah, Lord of the worlds - */
-praise(Y, X) :- praise(Y), god(X), god(X, _World).
+praise_to(P, X) :- praise(P), god_001(X), lord(X, World).
 
 /* The Entirely Merciful, the Especially Merciful, */
-god001(X) :- merciful(X), gracious(X).
+is_merciful(X).
+is_gracious(X).
 
 /* Sovereign of the Day of Recompense. */
-recompense(today).
-master(allah, recompense(today)).
+is_sovereign(X, day_of_recompense).
 
 /* It is You we worship and You we ask for help. */
-worship(mohamed,allah).
-askforhelp(mohamed, allah).
-guide(allah, mohamed).
+worship(Y, X).
+help(X, Y).
 
 /* Guide us to the straight path - */
-guide(mohamed, allah).
+guide(X, Y, straight(path)).
 
 /* The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray. */
-guide(allah, Someone, straight(path)) :- bestowed(Someone), anger(allah, not(Someone)), astray(not(Someone)).
+guide(X, Y, straight(path)) :- bestowed(Y), anger(X, not(Y)), astray(not(Y)).
