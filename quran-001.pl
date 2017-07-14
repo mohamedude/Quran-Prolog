@@ -1,6 +1,5 @@
 /*********************************************************************
-* I use quran.com as an english traduction, you can join us on slack
-* Al Fatiha
+                            Al Fatiha
 **********************************************************************/
 
 /* In the name of Allah, the Entirely Merciful, the Especially Merciful. */
@@ -27,3 +26,7 @@ guide(mohamed, allah).
 
 /* The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray. */
 guide(allah, Someone, straight(path)) :- bestowed(Someone), anger(allah, not(Someone)), astray(not(Someone)).
+
+/*
+ * Source : quran.com as an english traduction
+ */
