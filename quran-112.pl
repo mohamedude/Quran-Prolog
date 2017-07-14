@@ -11,3 +11,9 @@ one(allah).
 
 /* Allah, the Eternal Refuge. */
 absolute(allah).
+
+/* He neither begets nor is born, */
+god(X) :- not(begets(X)), not(born(X)).
+
+/* Nor is there to Him any equivalent." */
+not(equivalent(X, Y)).
