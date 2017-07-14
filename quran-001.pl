@@ -10,7 +10,7 @@ gracious(allah).
 praise(Y, X) :- praise(Y), god(X), god(X, _World).
 
 /* The Entirely Merciful, the Especially Merciful, */
-god(X) :- merciful(X), gracious(X).
+god001(X) :- merciful(X), gracious(X).
 
 /* Sovereign of the Day of Recompense. */
 recompense(today).

@@ -3,8 +3,6 @@
 **********************************************************************/
 
 /* In the name of Allah, the Entirely Merciful, the Especially Merciful. */
-merciful(allah).
-gracious(allah).
 
 /* Say, "He is Allah, [who is] One, */
 one(allah).
@@ -15,9 +13,9 @@ one(allah).
 absolute(allah).
 
 /* He neither begets nor is born, */
-god(X) :- not(begets(X)), not(born(X)).
+god112(X) :- not(begets(X)), not(born(X)).
 
 /* Nor is there to Him any equivalent." */
-not(equivalent(X, Y)).
+not(equivalent(X, Y)):- god(X), god(Y).
 
 /* Y is seen as lambda here */

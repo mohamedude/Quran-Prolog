@@ -10,7 +10,7 @@ gracious(allah).
 praise(Y, X) :- praise(Y), god(X), god(X, _World).
 
 /* The Entirely Merciful, the Especially Merciful, */
-god(X) :- merciful(X), gracious(X).
+god001(X) :- merciful(X), gracious(X).
 
 /* Sovereign of the Day of Recompense. */
 recompense(today).
@@ -26,13 +26,11 @@ guide(mohamed, allah).
 
 /* The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray. */
 guide(allah, Someone, straight(path)) :- bestowed(Someone), anger(allah, not(Someone)), astray(not(Someone)).
-
 /*********************************************************************
                             Al Baqarah
 **********************************************************************/
 
 /* In the name of Allah, the Entirely Merciful, the Especially Merciful. */
-/* defined earlier */
 
 /* This is the Book about which there is no doubt, a guidance for those conscious of Allah - */
 /*********************************************************************
@@ -40,7 +38,6 @@ guide(allah, Someone, straight(path)) :- bestowed(Someone), anger(allah, not(Som
 **********************************************************************/
 
 /* In the name of Allah, the Entirely Merciful, the Especially Merciful. */
-/* defined earlier */
 
 /* Say, "He is Allah, [who is] One, */
 one(allah).
@@ -51,10 +48,10 @@ one(allah).
 absolute(allah).
 
 /* He neither begets nor is born, */
-god(X) :- not(begets(X)), not(born(X)).
+god112(X) :- not(begets(X)), not(born(X)).
 
 /* Nor is there to Him any equivalent." */
-not(equivalent(X, Y)).
+not(equivalent(X, Y)):- god(X), god(Y).
 
 /* Y is seen as lambda here */
 
