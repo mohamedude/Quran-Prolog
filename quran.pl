@@ -1,3 +1,4 @@
+
 /*********************************************************************
                             Al Fatiha
 **********************************************************************/
@@ -26,6 +27,7 @@ guide(mohamed, allah).
 
 /* The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray. */
 guide(allah, Someone, straight(path)) :- bestowed(Someone), anger(allah, not(Someone)), astray(not(Someone)).
+
 /*********************************************************************
                             Al Baqarah
 **********************************************************************/
@@ -33,6 +35,7 @@ guide(allah, Someone, straight(path)) :- bestowed(Someone), anger(allah, not(Som
 /* In the name of Allah, the Entirely Merciful, the Especially Merciful. */
 
 /* This is the Book about which there is no doubt, a guidance for those conscious of Allah - */
+
 /*********************************************************************
                             Al Ikhlas
 **********************************************************************/
@@ -54,4 +57,5 @@ god112(X) :- not(begets(X)), not(born(X)).
 not(equivalent(X, Y)):- god(X), god(Y).
 
 /* Y is seen as lambda here */
+god(X) :- god001(X), god112(X).
 
