@@ -19,3 +19,5 @@ god(X) :- not(begets(X)), not(born(X)).
 
 /* Nor is there to Him any equivalent." */
 not(equivalent(X, Y)).
+
+/* Y is seen as lambda here */
