@@ -8,7 +8,7 @@ is_merciful(allah).
 is_gracious(allah).
 
 /* [All] praise is [due] to Allah, Lord of the worlds - */
-praise_to(P, X) :- praise(P), god_001(X), lord(X, World).
+praise_to(P, X) :- praise(P), god(X), lord(X, World).
 
 /* The Entirely Merciful, the Especially Merciful, */
 is_merciful(X).
@@ -25,4 +25,4 @@ help(X, Y).
 guide(X, Y, straight(path)).
 
 /* The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray. */
-guide(X, Y, straight(path)) :- bestowed(Y), anger(X, not(Y)), astray(not(Y)).
+straight(path) :- bestowed(Y), anger(X, not(Y)), astray(not(Y)).

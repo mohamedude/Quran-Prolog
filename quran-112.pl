@@ -11,13 +11,11 @@ is_gracious(allah).
 is_one(allah).
 
 /* Allah, the Eternal Refuge. */
-is_absolute(allah).
+is_eternal(allah).
 
 /* He neither begets nor is born, */
-not(is_begets(X)).
-not(is_born(X)).
+not(begets(X)).
+not(born(X)).
 
 /* Nor is there to Him any equivalent." */
 not(equivalent(X, Y)):- god(X), god(Y).
-
-/* Y is seen as lambda here */

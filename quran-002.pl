@@ -24,7 +24,7 @@ guide(is_god(X), Y).
 successful(Y).
 
 /* Indeed, those who disbelieve - it is all the same for them whether you warn them or do not warn them - they will not believe. */
-disbelieve(Y1) :- warm(Y1).
+not(believe(Y1)) :- warm(Y1).
 
 /* Allah has set a seal upon their hearts and upon their hearing, and over their vision is a veil. And for them is a great punishment. */
 set_seal(allah, heart(Y1), ears(Y1), eyes(Y1)).

@@ -8,16 +8,16 @@ is_merciful(allah).
 is_gracious(allah).
 
 /* Say, "I seek refuge in the Lord of daybreak */
-seek_refuge(mohamed, X) :- lord(X, daybreak).
+seek_refuge(Y, X) :- lord(X, daybreak).
 
 /* From the evil of that which He created */
-evil(Something).
-create(X, Something).
+evil(create(X, Y)).
 
 /* And from the evil of darkness when it settles */
-settles(darkness).
+evil(settles(darkness)).
 
 /* And from the evil of the blowers in knots */
-
+evil(blowers).
 
 /* And from the evil of an envier when he envies." */
+evil(envier(Y)) :- envie(envier(Y)).
