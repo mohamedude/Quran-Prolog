@@ -1,5 +1,4 @@
-is_lord(pharaon).
-god(X) :- X = allah.
+lord(X, Y) :- is_lord(X), Y = mankind.
 mankind(Y) :- Y = mohamed.
 
 /*********************************************************************
@@ -7,17 +6,17 @@ mankind(Y) :- Y = mohamed.
 **********************************************************************/
 
 /* In the name of Allah, the Entirely Merciful, the Especially Merciful. */
-is_gracious(allah).
-is_merciful(allah).
+gracious(allah).
+merciful(allah).
 
 /* Say, "I seek refuge in the Lord of mankind, */
-seek_refuge(Y, X, mankind) :- believer(Y), is_lord(X).
+seek_refuge(Y, X, mankind) :- believer(Y), lord(X, mankind).
 
 /* The Sovereign of mankind. */
-sovereign(X, mankind) :- god(X).
+is_sovereign(X, mankind) :- sovereign(X).
 
 /* The God of mankind, */
-god(X, mankind):- god(X).
+is_god(X, mankind) :- god(X).
 
 /* From the evil of the retreating whisperer - */
 

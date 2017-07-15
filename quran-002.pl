@@ -4,8 +4,8 @@
 **********************************************************************/
 
 /* In the name of Allah, the Entirely Merciful, the Especially Merciful. */
-is_gracious(allah).
-is_merciful(allah).
+gracious(allah).
+merciful(allah).
 
 /* This is the Book about which there is no doubt, a guidance for those conscious of Allah - */
 not(doubt(quran)).

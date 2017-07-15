@@ -4,8 +4,8 @@
 **********************************************************************/
 
 /* In the name of Allah, the Entirely Merciful, the Especially Merciful. */
-is_gracious(allah).
-is_merciful(allah).
+gracious(allah).
+merciful(allah).
 
 /* Say, "I seek refuge in the Lord of daybreak */
 seek_refuge(Y, X) :- lord(X, daybreak).
