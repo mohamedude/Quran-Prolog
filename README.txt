@@ -14,7 +14,7 @@ because sometimes it's we as god
 and sometimes it's we as a human prayer
 
 rab -> lord(X)
-malik -> sovereign(X)
+malik -> sovereign(X) so sovereign(allah) is al malik
 illah -> is_god(X, Y)
 
 is_god in general is coded by is_god(X, Y) X is allah and allah is the god of Y

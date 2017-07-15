@@ -35,6 +35,6 @@ straight(path, Y) :- god(X), bestowed(Y), anger(X, not(Y)), astray(not(Y)).
 
  You can ask :
  god(pharaon) -> true, it means pharaon is a god
- god(X) -> X = pharaon, who is the god ? it's pharaon
+ god(X) -> X = pharaon, it means who is the god ? it's pharaon
 
 **********************************************************************/

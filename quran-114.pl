@@ -1,5 +1,3 @@
-lord(X, Y) :- is_lord(X), Y = mankind.
-mankind(Y) :- Y = mohamed.
 
 /*********************************************************************
                             Al Nas
@@ -10,7 +8,7 @@ gracious(allah).
 merciful(allah).
 
 /* Say, "I seek refuge in the Lord of mankind, */
-seek_refuge(Y, X, mankind) :- believer(Y), lord(X, mankind).
+seek_refuge(Y, X, mankind) :- believer(Y), is_lord(X, mankind).
 
 /* The Sovereign of mankind. */
 is_sovereign(X, mankind) :- sovereign(X).
