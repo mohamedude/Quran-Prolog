@@ -18,4 +18,4 @@ not(begets(X)).
 not(born(X)).
 
 /* Nor is there to Him any equivalent." */
-not(equivalent(X, Y)):- god(X), god(Y).
+not(equivalent(X1, X2)):- god(X1), god(X2).
