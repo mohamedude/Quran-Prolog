@@ -8,7 +8,7 @@ gracious(allah).
 merciful(allah).
 
 /* Say, "I seek refuge in the Lord of daybreak */
-seek_refuge(Y, X) :- lord(X, daybreak).
+seek_refuge(Y, X) :- is_lord(X, daybreak).
 
 /* From the evil of that which He created */
 evil(create(X, Y)).

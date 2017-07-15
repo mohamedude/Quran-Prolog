@@ -8,10 +8,10 @@ gracious(allah).
 merciful(allah).
 
 /* Say, "He is Allah, [who is] One, */
-is_one(allah).
+one(allah).
 
 /* Allah, the Eternal Refuge. */
-is_eternal(allah).
+eternal(allah).
 
 /* He neither begets nor is born, */
 not(begets(X)).
