@@ -1,6 +1,7 @@
 praise(jump).
 lord(X, World):- X = pharaon, World = world.
 god(X):- X = pharaon.
+is_known(egypt).
 
 /*********************************************************************
                             Al Fatiha
@@ -29,3 +30,10 @@ guide(X, Y, straight(path)) :- beliver(Y), god(X).
 
 /* The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray. */
 straight(path, Y) :- god(X), bestowed(Y), anger(X, not(Y)), astray(not(Y)).
+
+/*********************************************************************
+ You can ask :
+ god(pharaon) -> true, it means pharaon is a god
+ god(X) -> X = pharaon, who is the god ? it's pharaon
+
+**********************************************************************/
