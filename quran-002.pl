@@ -16,11 +16,11 @@ conscious(Y, god(X)) :- belive(Y, unseen), prayer(Y), spend_out(provided(X, Y)).
 prayer(Y) :- pray(Y, X).
 
 /* And who believe in what has been revealed to you, [O Muhammad], and what was revealed before you, and of the Hereafter they are certain [in faith]. */
-believe(Y) :- believe(Y, reveal(mohamed, prophet(X, allah))).
+believe(Y) :- believe(Y, reveal(mohamed, prophet(Y, allah))).
 certain(Y, hereafter).
 
 /* Those are upon [right] guidance from their Lord, and it is those who are the successful. */
-guide(is_lord(X), Y).
+guide(is_lord(X, Y), Y).
 successful(Y).
 
 /* Indeed, those who disbelieve - it is all the same for them whether you warn them or do not warn them - they will not believe. */
