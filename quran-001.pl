@@ -1,5 +1,6 @@
-praise(fajr).
-lord(allah, world).
+praise(jump).
+lord(X, World):- X = pharaon, World = world.
+god(X):- X = pharaon.
 
 /*********************************************************************
                             Al Fatiha
@@ -10,11 +11,11 @@ is_gracious(allah).
 is_merciful(allah).
 
 /* [All] praise is [due] to Allah, Lord of the worlds - */
-praise_to(P, X) :- praise(P), lord(X, World).
+praise_to(P, X) :- praise(P), lord(X, World), is_known(World).
 
 /* The Entirely Merciful, the Especially Merciful, */
-% is_gracious(X)
-% is_merciful(X)
+% is_gracious(X) ?
+% is_merciful(X) ?
 
 /* Sovereign of the Day of Recompense. */
 is_sovereign(X, day_of_recompense) :- god(X).
