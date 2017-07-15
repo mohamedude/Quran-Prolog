@@ -1,3 +1,5 @@
+praise(fajr).
+lord(allah, world).
 
 /*********************************************************************
                             Al Fatiha
@@ -8,11 +10,11 @@ is_gracious(allah).
 is_merciful(allah).
 
 /* [All] praise is [due] to Allah, Lord of the worlds - */
-praise_to(P, X) :- praise(P), god(X), lord(X, world).
+praise_to(P, X) :- praise(P), lord(X, World).
 
 /* The Entirely Merciful, the Especially Merciful, */
-is_gracious(X) :- god(X).
-is_merciful(X) :- god(X).
+% is_gracious(X)
+% is_merciful(X)
 
 /* Sovereign of the Day of Recompense. */
 is_sovereign(X, day_of_recompense) :- god(X).
@@ -25,4 +27,4 @@ help(X, Y):- beliver(Y), god(X).
 guide(X, Y, straight(path)) :- beliver(Y), god(X).
 
 /* The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray. */
-straight(path, Y) :- bestowed(Y), anger(X, not(Y)), astray(not(Y)).
+straight(path, Y) :- god(X), bestowed(Y), anger(X, not(Y)), astray(not(Y)).
