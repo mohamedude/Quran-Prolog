@@ -4,8 +4,8 @@
 **********************************************************************/
 
 /* In the name of Allah, the Entirely Merciful, the Especially Merciful. */
-is_merciful(allah).
 is_gracious(allah).
+is_merciful(allah).
 
 /* Say, "He is Allah, [who is] One, */
 is_one(allah).
