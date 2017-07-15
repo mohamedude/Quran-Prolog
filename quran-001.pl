@@ -1,18 +1,18 @@
 praise(jump).
-lord(X, World):- X = pharaon, World = world.
+is_lord(X, World):- X = pharaon, World = world.
 god(X):- X = pharaon.
-is_known(egypt).
+know(egypt).
 
 /*********************************************************************
                             Al Fatiha
 **********************************************************************/
 
 /* In the name of Allah, the Entirely Merciful, the Especially Merciful. */
-is_gracious(allah).
-is_merciful(allah).
+gracious(allah).
+merciful(allah).
 
 /* [All] praise is [due] to Allah, Lord of the worlds - */
-praise_to(P, X) :- praise(P), lord(X, World), is_known(World).
+praise_to(P, X) :- praise(P), is_lord(X, World), know(World).
 
 /* The Entirely Merciful, the Especially Merciful, */
 % is_gracious(X) ?
@@ -32,6 +32,7 @@ guide(X, Y, straight(path)) :- beliver(Y), god(X).
 straight(path, Y) :- god(X), bestowed(Y), anger(X, not(Y)), astray(not(Y)).
 
 /*********************************************************************
+
  You can ask :
  god(pharaon) -> true, it means pharaon is a god
  god(X) -> X = pharaon, who is the god ? it's pharaon

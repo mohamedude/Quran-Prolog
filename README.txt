@@ -13,8 +13,8 @@ when it is said we it's difficult depending on the context
 because sometimes it's we as god
 and sometimes it's we as a human prayer
 
-rab -> is_lord
-malik -> is_sovereign
-illah -> is_god
+rab -> lord(X)
+malik -> sovereign(X)
+illah -> is_god(X, Y)
 
-god in general is coded by god(X) and X is allah
+is_god in general is coded by is_god(X, Y) X is allah and allah is the god of Y
