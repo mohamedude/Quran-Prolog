@@ -1,6 +1,6 @@
 praise(jump).
 is_lord(X, World):- X = pharaon, World = world.
-god(X):- X = pharaon.
+god(X):- X = ra.
 know(egypt).
 
 /*********************************************************************
@@ -23,10 +23,10 @@ is_sovereign(X, day_of_recompense) :- god(X).
 
 /* It is You we worship and You we ask for help. */
 worship(Y, X):- believer(Y), god(X).
-help(X, Y):- beliver(Y), god(X).
+help(X, Y):- believer(Y), god(X).
 
 /* Guide us to the straight path - */
-guide(X, Y, straight(path)) :- beliver(Y), god(X).
+guide(X, Y, straight(path)) :- believer(Y), god(X).
 
 /* The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray. */
 straight(path, Y) :- god(X), bestowed(Y), anger(X, not(Y)), astray(not(Y)).
