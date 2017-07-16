@@ -1,1 +1,4 @@
-prophet(mohamed, allah).
+prophet(mohamed).
+prophet(jesus).
+prophet(moses).
+prophet(abraham).
